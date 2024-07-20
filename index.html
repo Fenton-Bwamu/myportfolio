@@ -10,29 +10,36 @@
     <header>
         <nav>
             <h1>FENTON'S PORTFOLIO</h1>
+            <div id="main">
+                <button class="openbtn" onclick="openDrawer()">☰ Open Drawer</button>
+                <h2>Content Here</h2>
+                <p>Click the button to open the drawer.</p>
+            </div>
             <img src="I_m just warming up(WEBP).jpg" alt="Fenton's photo" width="100" height="100">
-            <ul>
-               
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#goals">Goals</a></li>
-                <li><a href="#interests">Interests</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
         </nav>
     </header>
+    <div id="myDrawer" class="drawer">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeDrawer()">&times;</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#goals">Goals</a>
+        <a href="#interests">Interests</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+
     <main>
         <section id="About">
             <h2>ABOUT FENTON</h2>
             <img src="If you_re not improving_ you_re falling behind(WEBP).webp" alt="Fenton's photo" width="500" height="500">
             <p>Welcome to Fenton's portfolio! This website showcases his various projects and experiences.</p>
-            <p>Fenton is originally from Vancouver, Canada. He moved to the United States to pursue his career in software engineering. He has a bachelor's degree in Computer Science from a prestigious university.</p>
+            <p>Fenton is originally from kenya, nairobi. He moved to the United States to pursue his career in software engineering. He has a bachelor's degree in Computer Science from SHIELD.</p>
             <p>Fenton is a software engineer with a passion for technology and design. He has worked in various industries, including finance, technology, and marketing, and has a strong foundation in computer science and programming languages. Fenton is currently seeking opportunities to work on cutting-edge projects and contribute to the development of innovative solutions.</p>
             <p>LinkedIn: <a href="https://www.linkedin.com/feed/?trk=onboarding-landing" target="_blank"><img src="linkedin.png" alt="LinkedIn" height="20" width="20"> Fenton Collins LinkedIn</a></p>
-            <p>GitHub: <a href="https://www.github.com/fentoncollins29" target="_blank"><img src="github.png" alt="GitHub" height="20" width="20"> Fenton Collins GitHub</a></p>
+            <p>GitHub: <a href="https://github.com/fenton123456789" target="_blank"><img src="github.png" alt="GitHub" height="20" width="20"> Fenton Collins GitHub</a></p>
             <p>tiktok: <a href="https://www.tiktok.com/@phenton999?lang=en" target="_blank"><img src="tik-tok.png" alt="tiktok" height="20" width="20">Fenton Collins Tiktok</a></p>
         </section>
 
@@ -45,7 +52,7 @@
         <section id="skills">
             <h2>Skills and Expertise</h2>
             <ul>
-                <li>Strong programming skills in C++, Java, and Python</li>
+                <li>Strong programming skills in Java, and Python</li>
                 <li>Expertise in software development, including design patterns, testing, and debugging</li>
                 <li>Knowledge of web development technologies, including HTML, CSS, and JavaScript</li>
                 <li>Experience with version control systems, such as Git</li>
@@ -96,8 +103,16 @@
                 <li>Technology and design</li>
                 <li>Reading and programming</li>
                 <li>Traveling and exploring new places</li>
-            </ul>
-        </section>
+                <li>Cooking and baking</li>      
+                <li>I enjoy participating in hackathons and coding competitions to showcase my skills.</li>
+                <li>I also enjoy playing the guitar and occasionally dabbling in piano</li> </ul> 
+                <h2>AND THE FUNNIEST HOBBIE. I LIKE MAKING TIKTOK VIDEO'S.</h2>
+                <p>I love to make short, funny videos to share my passion for technology, programming, and travel. <br>I also enjoy playing with my friends and family, and I'm always looking forward to new challenges and experiences.</p>
+                <p>You can find some of my funny TikTok videos on my <a href="https://www.tiktok.com/@phenton999?lang=en9">TikTok channel</a>.</p>
+                </section>
+
+           
+       
 
         <section id="education">
             <h2>Education</h2>
@@ -118,6 +133,18 @@
     <footer>
         <p>© 2024 Fenton Collins. All Rights Reserved.</p>
     </footer>
+    <script src="me.js">
+function openDrawer() {
+    document.getElementById("myDrawer").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeDrawer() {
+    document.getElementById("myDrawer").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+
+    </script>
 </body>
 </html>
 
